@@ -1,0 +1,33 @@
+<section class="form test-form-3">
+    <div class="container">
+        <form id="quizForm">
+            <div class="question">Синій провідник в кабелі це-</div>
+            <label>
+                <input type="radio" name="question" value="option3.1"> Заземлення PE
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question" value="option3.2"> Фаза L1
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question" value="option3.3"> Нуль N
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="question" value="option3.4"> Фаза L2
+            </label>
+            <br>
+            <button type="button" onclick="checkAnswerThree()">Відповісти</button>
+        </form>
+    
+        <div id="correctAlert" class="customAlert">
+            <p>Молодець, вірно!</p>
+        </div>
+    
+        <div id="incorrectAlert" class="customAlert">
+            <p>На жаль, не вірно.</p>
+        </div>
+
+    </div>
+</section>
