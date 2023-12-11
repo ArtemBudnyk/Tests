@@ -1,3 +1,96 @@
-h1 {
-    color: blue;
+
+body {
+    background-color: #717a84;
 }
+
+.form {
+
+    #quizForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .question {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    label {
+        background: linear-gradient(90deg, #dd2f48 0%, #afe6a3 100%);
+        padding: 10px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    button {
+        border-radius: 30px;
+        padding: 10px;
+        background: linear-gradient(51deg, #392fdd 0%, #9d1e7a 100%);
+        border: 0px;
+    }
+
+    .customAlert {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+
+    #incorrectAlert {
+        position: relative;
+        padding-left: 125px;
+        border-radius: 30px;
+        height: 45px;
+        margin-top: 55px;
+        background-color: #e42f2f;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 10%;
+            left: 8%;
+            background: url(assets/img/sad-emoji.png);
+            display: block;
+            width: 70px;
+            height: 70px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    #correctAlert {
+        position: relative;
+        padding-left: 125px;
+        border-radius: 30px;
+        height: 45px;
+        margin-top: 55px;
+        background-color: #55d510;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 10%;
+            left: 8%;
+            background: url(assets/img/chefful-emoji.png);
+            display: block;
+            width: 70px;
+            height: 70px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+
