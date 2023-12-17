@@ -3,22 +3,22 @@
         <form id="quizForm">
             <div class="question">Акробат йде по канату, зазирає в кожну хату. У світлицю хто гукне, тому світло увімкне.</div>
             <label>
-                <input type="radio" name="question" value="option2.1"> Електричний струм.
+                <input type="radio" name="question" value="option2_1" onclick="selectAnswer('option2_1')"> Електричний струм.
             </label>
             <br>
             <label>
-                <input type="radio" name="question" value="option2.2"> Генератор.
+                <input type="radio" name="question" value="option2_2" onclick="selectAnswer('option2_2')"> Генератор.
             </label>
             <br>
             <label>
-                <input type="radio" name="question" value="option2.3"> Трансформатор.
+                <input type="radio" name="question" value="option2_3" onclick="selectAnswer('option2_3')"> Трансформатор.
             </label>
             <br>
             <label>
-                <input type="radio" name="question" value="option2.4"> Лампочка.
+                <input type="radio" name="question" value="option2_4" onclick="selectAnswer('option2_4')"> Лампочка.
             </label>
             <br>
-            <button type="button" onclick="checkAnswerTwo()">Відповісти</button>
+            <button id="submit-btn" type="button" onclick="checkAnswerTwo(); submitAnswer()">Відповісти</button>
         </form>
     
         <div id="correctAlert" class="customAlert">

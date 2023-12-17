@@ -3,18 +3,18 @@
         <form id="quizForm">
             <div class="question">Чи споживає телевізор, який знаходиться і черговому режимі(або Stand-by), електроенергію?</div>
             <label>
-                <input type="radio" name="question" value="option1.1"> Споживає 1 Вт в місяць.
+                <input type="radio" name="question" value="option1_1" onclick="selectAnswer('option1_1')"> Споживає 1 Вт в місяць.
             </label>
             <br>
             <label>
-                <input type="radio" name="question" value="option1.2"> Не споживає.
+                <input type="radio" name="question" value="option1_2" onclick="selectAnswer('option1_2')"> Не споживає.
             </label>
             <br>
             <label>
-                <input type="radio" name="question" value="option1.3"> Споживає 4 кВт в місяць.
+                <input type="radio" name="question" value="option1_3" onclick="selectAnswer('option1_3')"> Споживає 4 кВт в місяць.
             </label>
             <br>
-            <button type="button" onclick="checkAnswerOne()">Відповісти</button>
+            <button id="submit-btn" type="button" onclick="checkAnswer(); submitAnswer()">Відповісти</button>
         </form>
     
         <div id="correctAlert" class="customAlert">
